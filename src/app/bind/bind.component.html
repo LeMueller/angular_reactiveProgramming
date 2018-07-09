@@ -1,0 +1,15 @@
+<p>
+  bind works!
+</p>
+<p>
+  <input type="text" (keyup)="onKey($event)">
+</p>
+<!-- 模板本地变量 #myFiels 和 react 中的ref一个作用 -->
+<p>
+  <input #myField type="text" (keyup)="onKeyValue(myField.value)">
+</p>
+
+<p>响应式编程Demo</p>
+
+<input type="text" [formControl]="searchInput">
+
